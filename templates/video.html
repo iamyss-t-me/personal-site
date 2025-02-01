@@ -1,0 +1,23 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Deals</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    {% include "header.html" %}
+    <div class="main">
+        <div class="video-container">
+            <span>{{video.title}}</span>
+            <img src="https://img.migna155.workers.dev/file/2446496603/{{random(video.screenshots).id}}/image.jpg" alt="">
+            <a href="tg://resolve?domain=premiumdeals_1bot&start={{video.id}}">Watch Now</a>
+        </div>
+    </div>
+    {% include "footer.html" %}
+</body>
+
+
+</html>

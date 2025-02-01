@@ -10,7 +10,7 @@ db = DB()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 app.mount("/ss/static", StaticFiles(directory="static"), name="static")
 app.mount("/v/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="template")
+templates = Jinja2Templates(directory="templates")
 
 
 
